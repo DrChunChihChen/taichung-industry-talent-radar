@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-10-03T19:30:00",
+  "total_checks": 8,
+  "passed_checks": 8,
+  "failed_checks": 0,
+  "details": [
+    {
+      "check_id": "DQ_01",
+      "name": "Duplicate Company ID",
+      "status": "PASS",
+      "message": "無重複統編"
+    },
+    {
+      "check_id": "DQ_02",
+      "name": "Missing or Unknown District in Companies",
+      "status": "PASS",
+      "message": "全數公司行政區均有效對齊"
+    },
+    {
+      "check_id": "DQ_03",
+      "name": "Unknown Business Code Mapping",
+      "status": "PASS",
+      "message": "營業代碼映射規則完整無空缺"
+    },
+    {
+      "check_id": "DQ_04",
+      "name": "Negative Company Stock",
+      "status": "PASS",
+      "message": "企業存量數值均非負數"
+    },
+    {
+      "check_id": "DQ_05",
+      "name": "Impossible Registration Rate (Range 0-100%)",
+      "status": "PASS",
+      "message": "註冊率均介於 0% 至 100% 之間"
+    },
+    {
+      "check_id": "DQ_06",
+      "name": "Missing Department UCAN Mapping",
+      "status": "PASS",
+      "message": "所有系所皆已映射至 UCAN 職涯途徑"
+    },
+    {
+      "check_id": "DQ_07",
+      "name": "Missing or Zero UCAN Mapping Weights",
+      "status": "PASS",
+      "message": "UCAN 職涯權重與稀釋權重皆有效"
+    },
+    {
+      "check_id": "DQ_08",
+      "name": "Industry Talent Supply Null/Empty",
+      "status": "PASS",
+      "message": "7大目標產業人才供給池均完整推估"
+    }
+  ],
+  "all_passed": true
+}

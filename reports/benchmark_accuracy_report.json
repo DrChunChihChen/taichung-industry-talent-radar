@@ -1,0 +1,659 @@
+{
+  "timestamp": "2026-10-03T19:35:00",
+  "total_questions": 65,
+  "passed": 65,
+  "failed": 0,
+  "accuracy_rate_pct": 100.0,
+  "results": [
+    {
+      "question_id": "BM_IND_01",
+      "category": "Industry Dynamics",
+      "question": "請問台中市智慧製造與精密機械產業在113年的新設公司率（Entry Rate）為多少？",
+      "expected_intent": "INDUSTRY_QUERY",
+      "routed_intent": "INDUSTRY_QUERY",
+      "expected_value": 3.54,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_IND_02",
+      "category": "Industry Dynamics",
+      "question": "請問資訊軟體與數位科技產業在台中市的需求擴張動能主分數（Demand Momentum）是多少？",
+      "expected_intent": "INDUSTRY_QUERY",
+      "routed_intent": "INDUSTRY_QUERY",
+      "expected_value": 1.2416,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_IND_03",
+      "category": "Industry Dynamics",
+      "question": "請問半導體與綠能科技產業在台中市113年的資本擴張率（Capital Rate）為多少？",
+      "expected_intent": "INDUSTRY_QUERY",
+      "routed_intent": "INDUSTRY_QUERY",
+      "expected_value": 9.8,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_IND_04",
+      "category": "Industry Dynamics",
+      "question": "請問生技醫療與精準健康產業在台中市的需求擴張動能（Demand Momentum）數值是多少？",
+      "expected_intent": "INDUSTRY_QUERY",
+      "routed_intent": "INDUSTRY_QUERY",
+      "expected_value": 0.5272,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_IND_05",
+      "category": "Industry Dynamics",
+      "question": "請問國際貿易與現代物流產業113年的歇業解散率（Exit Rate，風險參考值）為多少？",
+      "expected_intent": "INDUSTRY_QUERY",
+      "routed_intent": "INDUSTRY_QUERY",
+      "expected_value": 3.35,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DIST_01",
+      "category": "District Spatial",
+      "question": "請問西屯區在113年度的登記企業總存量為多少家？",
+      "expected_intent": "DISTRICT_QUERY",
+      "routed_intent": "DISTRICT_QUERY",
+      "expected_value": 29291.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DIST_02",
+      "category": "District Spatial",
+      "question": "請問南屯區在113年度的新設公司總數為多少家？",
+      "expected_intent": "DISTRICT_QUERY",
+      "routed_intent": "DISTRICT_QUERY",
+      "expected_value": 1159.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DIST_03",
+      "category": "District Spatial",
+      "question": "請問北屯區在113年度的增資公司總數為多少家？",
+      "expected_intent": "DISTRICT_QUERY",
+      "routed_intent": "DISTRICT_QUERY",
+      "expected_value": 1108.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_SUP_01",
+      "category": "Supply Projection",
+      "question": "請問少子化衝擊下，117學年度全國大專新生預估人數是多少人？",
+      "expected_intent": "DEMOGRAPHIC_QUERY",
+      "routed_intent": "DEMOGRAPHIC_QUERY",
+      "expected_value": 156000.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_SUP_02",
+      "category": "Supply Projection",
+      "question": "請問113學年度至117學年度全國新生縮減差額預估為多少人？",
+      "expected_intent": "DEMOGRAPHIC_QUERY",
+      "routed_intent": "DEMOGRAPHIC_QUERY",
+      "expected_value": 32000.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_SUP_03",
+      "category": "Supply Projection",
+      "question": "請問資訊軟體與數位科技產業在117學年度的高教人才供給推估量是多少人？",
+      "expected_intent": "SUPPLY_QUERY",
+      "routed_intent": "SUPPLY_QUERY",
+      "expected_value": 13457.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_MIS_01",
+      "category": "Mismatch Warning",
+      "question": "請問智慧製造與精密機械產業的錯配強度數值（Mismatch）是多少？",
+      "expected_intent": "MISMATCH_QUERY",
+      "routed_intent": "MISMATCH_QUERY",
+      "expected_value": -1.7267,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_MIS_02",
+      "category": "Mismatch Warning",
+      "question": "請問資訊軟體與數位科技產業的供需錯配數值（Mismatch）是多少？",
+      "expected_intent": "MISMATCH_QUERY",
+      "routed_intent": "MISMATCH_QUERY",
+      "expected_value": 0.9296,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_MIS_03",
+      "category": "Mismatch Warning",
+      "question": "請問數位文創與觀光休閒產業的錯配數值（Mismatch）是多少？",
+      "expected_intent": "MISMATCH_QUERY",
+      "routed_intent": "MISMATCH_QUERY",
+      "expected_value": 1.281,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_MIS_04",
+      "category": "Mismatch Warning",
+      "question": "請問生技醫療與精準健康產業的錯配數值（Mismatch）是多少？",
+      "expected_intent": "MISMATCH_QUERY",
+      "routed_intent": "MISMATCH_QUERY",
+      "expected_value": 0.383,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_COMP_01",
+      "category": "Company Verification",
+      "question": "請核實統一編號 22099131 的登記公司名稱與狀態",
+      "expected_intent": "COMPANY_VERIFY",
+      "routed_intent": "COMPANY_VERIFY",
+      "expected_value": 22099131.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_COMP_02",
+      "category": "Company Verification",
+      "question": "請核實統一編號 12821217 的登記公司名稱與狀態",
+      "expected_intent": "COMPANY_VERIFY",
+      "routed_intent": "COMPANY_VERIFY",
+      "expected_value": 12821217.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_COMP_03",
+      "category": "Company Verification",
+      "question": "請核實統一編號 22513470 的登記公司名稱與狀態",
+      "expected_intent": "COMPANY_VERIFY",
+      "routed_intent": "COMPANY_VERIFY",
+      "expected_value": 22513470.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_COMP_04",
+      "category": "Company Verification",
+      "question": "請核實統一編號 23337998 的登記公司名稱與狀態",
+      "expected_intent": "COMPANY_VERIFY",
+      "routed_intent": "COMPANY_VERIFY",
+      "expected_value": 23337998.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_COMP_05",
+      "category": "Company Verification",
+      "question": "請核實統一編號 52488805 的登記公司名稱與狀態",
+      "expected_intent": "COMPANY_VERIFY",
+      "routed_intent": "COMPANY_VERIFY",
+      "expected_value": 52488805.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_COMP_06",
+      "category": "Company Verification",
+      "question": "請核實統一編號 27318047 的登記公司名稱與狀態",
+      "expected_intent": "COMPANY_VERIFY",
+      "routed_intent": "COMPANY_VERIFY",
+      "expected_value": 27318047.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_COMP_07",
+      "category": "Company Verification",
+      "question": "請核實統一編號 28469399 的登記公司名稱與狀態",
+      "expected_intent": "COMPANY_VERIFY",
+      "routed_intent": "COMPANY_VERIFY",
+      "expected_value": 28469399.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_COMP_08",
+      "category": "Company Verification",
+      "question": "請核實統一編號 80242502 的登記公司名稱與狀態",
+      "expected_intent": "COMPANY_VERIFY",
+      "routed_intent": "COMPANY_VERIFY",
+      "expected_value": 80242502.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_COMP_09",
+      "category": "Company Verification",
+      "question": "請核實統一編號 28701928 的登記公司名稱與狀態",
+      "expected_intent": "COMPANY_VERIFY",
+      "routed_intent": "COMPANY_VERIFY",
+      "expected_value": 28701928.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_COMP_10",
+      "category": "Company Verification",
+      "question": "請核實統一編號 54320988 的登記公司名稱與狀態",
+      "expected_intent": "COMPANY_VERIFY",
+      "routed_intent": "COMPANY_VERIFY",
+      "expected_value": 54320988.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_STU_01",
+      "category": "Department Student",
+      "question": "請問國立中興大學教師專業發展研究所在113學年度的在學學生數是多少人？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 25.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_STU_02",
+      "category": "Department Student",
+      "question": "請問國立中興大學歷史學系在113學年度的在學學生數是多少人？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 341.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_STU_03",
+      "category": "Department Student",
+      "question": "請問國立中興大學外國語文學系在113學年度的在學學生數是多少人？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 426.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_STU_04",
+      "category": "Department Student",
+      "question": "請問國立中興大學台灣文學與跨國文化研究所在113學年度的在學學生數是多少人？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 61.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_STU_05",
+      "category": "Department Student",
+      "question": "請問國立中興大學台灣與跨文化研究國際博士學位學程在113學年度的在學學生數是多少人？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 13.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_STU_06",
+      "category": "Department Student",
+      "question": "請問國立中興大學台灣人文創新學士學位學程在113學年度的在學學生數是多少人？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 71.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_STU_07",
+      "category": "Department Student",
+      "question": "請問國立中興大學中國文學系在113學年度的在學學生數是多少人？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 478.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_STU_08",
+      "category": "Department Student",
+      "question": "請問國立中興大學應用經濟學系在113學年度的在學學生數是多少人？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 277.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_STU_09",
+      "category": "Department Student",
+      "question": "請問國立中興大學國際政治研究所在113學年度的在學學生數是多少人？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 111.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_STU_10",
+      "category": "Department Student",
+      "question": "請問國立中興大學圖書資訊學研究所在113學年度的在學學生數是多少人？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 35.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_REG_01",
+      "category": "Department Registration",
+      "question": "請問國立中興大學會計學系的新生註冊率是多少？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 98.78,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_REG_02",
+      "category": "Department Registration",
+      "question": "請問國立中興大學財務金融學系的新生註冊率是多少？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 88.28,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_REG_03",
+      "category": "Department Registration",
+      "question": "請問國立中興大學企業管理學系的新生註冊率是多少？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 99.44,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_REG_04",
+      "category": "Department Registration",
+      "question": "請問國立中興大學創新產業經營學士學位學程的新生註冊率是多少？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 100.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_REG_05",
+      "category": "Department Registration",
+      "question": "請問國立中興大學運動與健康管理研究所的新生註冊率是多少？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 90.91,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_REG_06",
+      "category": "Department Registration",
+      "question": "請問國立中興大學國家政策與公共事務研究所的新生註冊率是多少？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 93.79,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_REG_07",
+      "category": "Department Registration",
+      "question": "請問國立中興大學行銷學系的新生註冊率是多少？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 98.28,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_REG_08",
+      "category": "Department Registration",
+      "question": "請問國立中興大學全球事務研究跨洲碩士學位學程的新生註冊率是多少？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 16.67,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_REG_09",
+      "category": "Department Registration",
+      "question": "請問國立中興大學科技管理研究所的新生註冊率是多少？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 100.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_REG_10",
+      "category": "Department Registration",
+      "question": "請問國立中興大學科技管理研究所智慧科技管理碩士在職專班的新生註冊率是多少？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 100.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_117_01",
+      "category": "Department 117 Projection",
+      "question": "請問國立中興大學教師專業發展研究所至117學年度的推估生源是多少人？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 15.3,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_117_02",
+      "category": "Department 117 Projection",
+      "question": "請問國立中興大學歷史學系至117學年度的推估生源是多少人？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 350.4,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_117_03",
+      "category": "Department 117 Projection",
+      "question": "請問國立中興大學外國語文學系至117學年度的推估生源是多少人？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 197.3,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_117_04",
+      "category": "Department 117 Projection",
+      "question": "請問國立中興大學台灣文學與跨國文化研究所至117學年度的推估生源是多少人？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 53.2,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_117_05",
+      "category": "Department 117 Projection",
+      "question": "請問國立中興大學台灣與跨文化研究國際博士學位學程至117學年度的推估生源是多少人？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 10.6,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_117_06",
+      "category": "Department 117 Projection",
+      "question": "請問國立中興大學台灣人文創新學士學位學程至117學年度的推估生源是多少人？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 108.7,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_117_07",
+      "category": "Department 117 Projection",
+      "question": "請問國立中興大學中國文學系至117學年度的推估生源是多少人？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 287.2,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_117_08",
+      "category": "Department 117 Projection",
+      "question": "請問國立中興大學應用經濟學系至117學年度的推估生源是多少人？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 247.5,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_117_09",
+      "category": "Department 117 Projection",
+      "question": "請問國立中興大學國際政治研究所至117學年度的推估生源是多少人？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 55.8,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_DEPT_117_10",
+      "category": "Department 117 Projection",
+      "question": "請問國立中興大學圖書資訊學研究所至117學年度的推估生源是多少人？",
+      "expected_intent": "DEPARTMENT_QUERY",
+      "routed_intent": "DEPARTMENT_QUERY",
+      "expected_value": 34.4,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_EXTRA_DIST_01",
+      "category": "District Spatial",
+      "question": "請問大雅區在113年度的企業總存量是多少家？",
+      "expected_intent": "DISTRICT_QUERY",
+      "routed_intent": "DISTRICT_QUERY",
+      "expected_value": 6791.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_EXTRA_DIST_02",
+      "category": "District Spatial",
+      "question": "請問潭子區在113年度的企業總存量是多少家？",
+      "expected_intent": "DISTRICT_QUERY",
+      "routed_intent": "DISTRICT_QUERY",
+      "expected_value": 8182.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_EXTRA_DIST_03",
+      "category": "District Spatial",
+      "question": "請問豐原區在113年度的企業總存量是多少家？",
+      "expected_intent": "DISTRICT_QUERY",
+      "routed_intent": "DISTRICT_QUERY",
+      "expected_value": 6633.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_EXTRA_DIST_04",
+      "category": "District Spatial",
+      "question": "請問梧棲區在113年度的企業總存量是多少家？",
+      "expected_intent": "DISTRICT_QUERY",
+      "routed_intent": "DISTRICT_QUERY",
+      "expected_value": 3973.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_EXTRA_DIST_05",
+      "category": "District Spatial",
+      "question": "請問烏日區在113年度的企業總存量是多少家？",
+      "expected_intent": "DISTRICT_QUERY",
+      "routed_intent": "DISTRICT_QUERY",
+      "expected_value": 4094.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_EXTRA_DIST_06",
+      "category": "District Spatial",
+      "question": "請問大里區在113年度的企業總存量是多少家？",
+      "expected_intent": "DISTRICT_QUERY",
+      "routed_intent": "DISTRICT_QUERY",
+      "expected_value": 7954.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_EXTRA_DIST_07",
+      "category": "District Spatial",
+      "question": "請問太平區在113年度的企業總存量是多少家？",
+      "expected_intent": "DISTRICT_QUERY",
+      "routed_intent": "DISTRICT_QUERY",
+      "expected_value": 5310.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_EXTRA_DIST_08",
+      "category": "District Spatial",
+      "question": "請問西區在113年度的企業總存量是多少家？",
+      "expected_intent": "DISTRICT_QUERY",
+      "routed_intent": "DISTRICT_QUERY",
+      "expected_value": 10594.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_EXTRA_DIST_09",
+      "category": "District Spatial",
+      "question": "請問北區在113年度的企業總存量是多少家？",
+      "expected_intent": "DISTRICT_QUERY",
+      "routed_intent": "DISTRICT_QUERY",
+      "expected_value": 9259.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    },
+    {
+      "question_id": "BM_EXTRA_DIST_10",
+      "category": "District Spatial",
+      "question": "請問南區在113年度的企業總存量是多少家？",
+      "expected_intent": "DISTRICT_QUERY",
+      "routed_intent": "DISTRICT_QUERY",
+      "expected_value": 6658.0,
+      "matched_in_answer": true,
+      "status": "PASS"
+    }
+  ]
+}

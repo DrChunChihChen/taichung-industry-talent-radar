@@ -2,6 +2,8 @@
 ## Regional Industry–Talent Structural Mismatch Early-Warning System
 ### 2026 InnoServe 資訊應用服務創新競賽【經濟部商工登記資料應用組 (GCIS-OD)】
 
+[![Live System](https://img.shields.io/badge/Live_System-taichung--talent--radar.netlify.app-blue?style=flat&logo=netlify)](https://taichung-talent-radar.netlify.app)
+[![Live Architecture](https://img.shields.io/badge/Live_Architecture-Interactive_Panel-purple?style=flat&logo=terminal)](https://taichung-talent-radar.netlify.app/architecture)
 [![InnoServe 2026](https://img.shields.io/badge/Competition-InnoServe_2026_GCIS--OD-blue.svg)](https://innoserveawards.tca.org.tw/advertise26_GCIS-OD.htm)
 [![Golden Benchmark](https://img.shields.io/badge/Golden_Benchmark-65%2F65_Passed_(100%25)-emerald.svg)](benchmark/golden_questions.json)
 [![ETL Quality](https://img.shields.io/badge/ETL_Quality_Audit-8%2F8_Passed-success.svg)](tests/test_etl_quality.py)
@@ -10,13 +12,22 @@
 
 ---
 
+## 🌐 線上部署展示站點 (Live Public URLs)
+
+- 🚀 **系統正式上線網址（決策戰情室）：** [https://taichung-talent-radar.netlify.app](https://taichung-talent-radar.netlify.app)
+- ⚡ **實時動態架構儀表板（Live Panel）：** [https://taichung-talent-radar.netlify.app/architecture](https://taichung-talent-radar.netlify.app/architecture)
+- 📦 **GitHub 開放原始碼儲存庫：** [https://github.com/DrChunChihChen/taichung-industry-talent-radar](https://github.com/DrChunChihChen/taichung-industry-talent-radar)
+
+---
+
 ## 📌 快速交接與規格文件導覽 (Documentation Index)
 
-為協助團隊交接與競賽答辯，本專案提供全套三份高規格技術文件：
+為協助團隊交接與競賽答辯，本專案提供全套高規格技術文件與動態儀表板：
 
 | 文件名稱 | 主要內容 | 適用對象 |
 | :--- | :--- | :--- |
-| ⚡ **[系統實時動態架構儀表板](architecture/index.html)** | **live-panel** 打造之動態終端監控架構（導線粒子動效、實時遙測日誌、狀態機翻轉） | 競賽評審、架構師、技術團隊 |
+| 🚀 **[系統正式上線戰情室](https://taichung-talent-radar.netlify.app)** | **Lieflat Charts × Impeccable** 淺色紙質系戰情室、Hello IR 乾淨問問入口、雙軸動能氣壓計、四象限錯配散布圖 | 競賽評審、政府決策者、校務主管 |
+| ⚡ **[系統實時動態架構儀表板](https://taichung-talent-radar.netlify.app/architecture)** | **live-panel** 打造之動態終端監控架構（導線粒子動效、實時遙測日誌、狀態機翻轉） | 競賽評審、架構師、技術團隊 |
 | 📘 **[完整系統規劃書](docs/SYSTEM_SPECIFICATION.md)** | 系統願景、P1–P5 五大原則、資料架構、數理公式推導、四象限錯配矩陣、Agent 五道護欄、Lieflat 前端規範 | 指導教授、競賽評審、架構師 |
 | 💻 **[檔案與資料庫架構規格書](docs/FILE_SPECIFICATION.md)** | 完整目錄樹狀圖、Python 模組職責表、SQLite 8 張表完整資料字典、Data Mart CSV 規格、RESTful API 規格 | 後端開發者、資料工程師 |
 | 🚀 **[學生交接手冊與競賽衝刺指南](docs/STUDENT_HANDOVER_GUIDE.md)** | 3 分鐘快速本機跑起來、一鍵重跑資料管線、新產業/新工具擴充教學、評審必考 QA 題庫攻防秘笈 | 接手學生團隊、參賽答辯者 |

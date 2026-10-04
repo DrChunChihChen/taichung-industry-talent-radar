@@ -300,6 +300,15 @@ def serve_frontend():
         return FileResponse(index_file)
     return {"message": "Regional Industry-Talent Mismatch System API is running. Build index.html next."}
 
+@app.get("/architecture")
+@app.get("/architecture/index.html")
+@app.get("/ui/architecture.html")
+def serve_architecture():
+    arch_file = BASE_DIR / "architecture" / "index.html"
+    if arch_file.exists():
+        return FileResponse(arch_file)
+    return {"error": "architecture/index.html not found"}
+
 if __name__ == "__main__":
     import uvicorn
     print("Starting FastAPI Local Server on http://127.0.0.1:8000 ...")

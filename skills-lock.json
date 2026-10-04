@@ -1,11 +1,59 @@
 {
   "version": 1,
   "skills": {
+    "answer-me-with-html": {
+      "source": "QingYunA/answer-me-with-html",
+      "sourceType": "github",
+      "skillPath": "skills/answer-me-with-html/SKILL.md",
+      "computedHash": "911b8345eef9f14f124d5954e5775fa084fad77a4d4adb34eeed7506b8e7581c"
+    },
+    "design-artifact": {
+      "source": "plannotator/effective-html",
+      "sourceType": "github",
+      "skillPath": "skills/design-artifact/SKILL.md",
+      "computedHash": "241a1c8c8ccf12a56252cecc8aaeba5c7798f6e5b94f51b1b43a492f8d489f9f"
+    },
+    "html": {
+      "source": "plannotator/effective-html",
+      "sourceType": "github",
+      "skillPath": "skills/html/SKILL.md",
+      "computedHash": "efb3a609da133e0e22e600777c9467a0281cc98467cdce2805c53126e417f862"
+    },
+    "html-diagram": {
+      "source": "plannotator/effective-html",
+      "sourceType": "github",
+      "skillPath": "skills/html-diagram/SKILL.md",
+      "computedHash": "b2bc1642ecf9bea473fd92993c87a1d05a1b53cc20192a8c04e78d86b47691db"
+    },
+    "html-plan": {
+      "source": "plannotator/effective-html",
+      "sourceType": "github",
+      "skillPath": "skills/html-plan/SKILL.md",
+      "computedHash": "1ccf3225f6ecc19a21c684b5e50fd67eb627cc36d03627c15f35cd479e34b8b2"
+    },
+    "html-prototype": {
+      "source": "plannotator/effective-html",
+      "sourceType": "github",
+      "skillPath": "skills/html-prototype/SKILL.md",
+      "computedHash": "c71292a9cc5f77970bf2d8b50a87213f4a014038c4f61a9da8f9b8b9ac272391"
+    },
+    "html-wireframe": {
+      "source": "plannotator/effective-html",
+      "sourceType": "github",
+      "skillPath": "skills/html-wireframe/SKILL.md",
+      "computedHash": "4506e8c9033431fc171a4953ffed582d2dea1432881f7f481a94fd54e6a0b660"
+    },
     "impeccable": {
       "source": "pbakaus/impeccable",
       "sourceType": "github",
       "skillPath": ".agents/skills/impeccable/SKILL.md",
       "computedHash": "6b5ebc0ee592c7d4620827b20f1554706607e3363835a951c78ee37ac63a7df0"
+    },
+    "live-panel": {
+      "source": "ythx-101/live-panel-skill",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "c79e27c0d971f03498e1c399ee8c73a49fda5b72021f074027c202bcf81c77ac"
     }
   }
 }

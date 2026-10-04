@@ -16,6 +16,7 @@
 
 | 文件名稱 | 主要內容 | 適用對象 |
 | :--- | :--- | :--- |
+| ⚡ **[系統實時動態架構儀表板](architecture/index.html)** | **live-panel** 打造之動態終端監控架構（導線粒子動效、實時遙測日誌、狀態機翻轉） | 競賽評審、架構師、技術團隊 |
 | 📘 **[完整系統規劃書](docs/SYSTEM_SPECIFICATION.md)** | 系統願景、P1–P5 五大原則、資料架構、數理公式推導、四象限錯配矩陣、Agent 五道護欄、Lieflat 前端規範 | 指導教授、競賽評審、架構師 |
 | 💻 **[檔案與資料庫架構規格書](docs/FILE_SPECIFICATION.md)** | 完整目錄樹狀圖、Python 模組職責表、SQLite 8 張表完整資料字典、Data Mart CSV 規格、RESTful API 規格 | 後端開發者、資料工程師 |
 | 🚀 **[學生交接手冊與競賽衝刺指南](docs/STUDENT_HANDOVER_GUIDE.md)** | 3 分鐘快速本機跑起來、一鍵重跑資料管線、新產業/新工具擴充教學、評審必考 QA 題庫攻防秘笈 | 接手學生團隊、參賽答辯者 |
@@ -96,6 +97,13 @@ python3 pipeline/run_full_pipeline.py
 
 ### 6. 守門型 AI 決策代理人 (Jev 守門 + 數值核驗徽章)
 ![AI 決策代理人](reports/lieflat_agent_tab.png)
+
+### 7. 系統實時動態架構儀表板 (Live-Panel Architecture Diagram)
+> 由 **`ythx-101/live-panel`** 技能編譯生成之純 HTML/CSS/JS 實時動態監控架構頁面，具備固定佈局、高亮導線粒子動效、即時滾動遙測日誌與狀態機翻轉。
+
+![系統實時動態架構儀表板](reports/architecture_live_panel.png)
+
+👉 **線上動態體驗入口**：[architecture/index.html](architecture/index.html) 或本機訪問 `http://127.0.0.1:8888/architecture`
 
 ---
 

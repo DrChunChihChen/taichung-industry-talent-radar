@@ -82,17 +82,16 @@ def generate_explanation(intent: str, structured_data: Dict[str, Any]) -> str:
             return "\n".join(lines)
 
     elif intent == "DISTRICT_QUERY":
-        dist = data.get("district", "西屯區")
-        year = data.get("year", 113)
-        inds = data.get("industries", [])
-        lines = [f"【{dist} 產業需求端活動分布（{year}年度）】\n"]
-        lines.append(f"• 該行政區登記企業總存量：{data.get('total_ending_stock', 0):,} 家")
-        lines.append(f"• 當年度新設公司總數：{data.get('total_openings', 0):,} 家")
-        lines.append(f"• 當年度增資公司總數：{data.get('total_capital_increases', 0):,} 家\n")
-        lines.append("各目標產業企業存量前列：")
-        for ind in inds[:5]:
-            lines.append(f"  - {ind['industry_id']}：存量 {ind['ending_stock']:,} 家（新設 {ind['opening_count']} 家，增資 {ind['capital_increase_count']} 家）")
-        lines.append("\n重要提醒：依系統原則 P5 與 Section 23，行政區僅供需求端空間展示，不得推論為行政區人才不足率。")
+        dist = data.get("district", "")
+        year = data.get("year")
+        lines = [f"【{dist} 區域同業工廠家數（{year}年）】"]
+        if data.get("status") != "available":
+            lines.append("此條件尚未匯入可用官方資料；不以零或模擬值代替。")
+        else:
+            for item in data.get("industries", []):
+                lines.append(f"• {item['industry_name']}：營運中工廠 {item['factory_count']:,} 家")
+        lines.append("資料來源：經濟部工廠校正及營運調查。")
+        lines.append("本結果只涵蓋已匯入行業；工廠家數不等於公司總數、徵才需求或缺工人數。")
         return "\n".join(lines)
 
     elif intent == "DEMOGRAPHIC_QUERY":

@@ -11,52 +11,18 @@ from typing import Dict, List, Any
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from database.db_manager import db
+from engine.factory_density import get_regional_peer_density
 from engine.industry_momentum import get_industry_momentum
 from engine.talent_supply import get_talent_supply, get_department_projection
 from engine.mismatch_engine import get_mismatch_signal
 from engine.gcis_live_verifier import verify_company_live
 from engine.evidence_engine import build_evidence_object
 
-def get_district_industry(district: str = "西屯區", year: int = 113) -> Dict[str, Any]:
-    """
-    Returns district-level demand-side metrics strictly (Section 23).
-    No district-level talent shortage percentages!
-    """
-    sql = """
-        SELECT 
-            year, district, industry_id,
-            opening_count, dissolution_count, capital_increase_count,
-            beginning_stock, ending_stock,
-            entry_rate, capital_expansion_rate, exit_rate
-        FROM industry_dynamics_mart
-        WHERE district = ? AND year = ?
-        ORDER BY ending_stock DESC
-    """
-    rows = db.fetch_all(sql, (district, year))
-    
-    total_stock = sum(r["ending_stock"] for r in rows)
-    total_openings = sum(r["opening_count"] for r in rows)
-    total_cap_inc = sum(r["capital_increase_count"] for r in rows)
-    
-    return {
-        "district": district,
-        "year": year,
-        "total_ending_stock": total_stock,
-        "total_openings": total_openings,
-        "total_capital_increases": total_cap_inc,
-        "industries": rows,
-        "evidence": build_evidence_object(
-            intent="DISTRICT_QUERY",
-            indicator_name=f"{district}需求端企業動態",
-            calculation_steps=[
-                f"Sum(ending_stock) in {district} for year {year} = {total_stock}",
-                f"Sum(opening_count) in {district} for year {year} = {total_openings}"
-            ],
-            source_tables=["industry_dynamics_mart"],
-            official_sources=["經濟部商工行政資料開放平臺公司登記批次資料"],
-            geography=f"台中市{district}"
-        )
-    }
+def get_district_industry(district: str = "大雅區", year: int = 113,
+                         industry_code=None) -> Dict[str, Any]:
+    """Regional peers: reviewed factory counts, with no simulated fallback."""
+    return get_regional_peer_density(district, year, industry_code)
+
 
 def get_demographics_data(target_year: int = 117) -> Dict[str, Any]:
     """Returns demographic cohort data to target academic year"""
@@ -143,7 +109,7 @@ def execute_tool(intent: str, params: Dict[str, Any]) -> Dict[str, Any]:
 
     elif intent == "DISTRICT_QUERY":
         dist = params.get("district", "西屯區")
-        res = get_district_industry(dist, 113)
+        res = get_district_industry(dist, params.get("year", 113), params.get("industry_code"))
         return {"tool": "get_district_industry", "data": res, "evidence": res["evidence"]}
 
     elif intent == "DEMOGRAPHIC_QUERY":

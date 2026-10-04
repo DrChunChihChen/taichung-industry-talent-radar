@@ -84,7 +84,13 @@ def route_intent(query: str) -> Dict[str, Any]:
         return {
             "intent": "DISTRICT_QUERY",
             "confidence": 0.95,
-            "params": {"district": matched_district}
+            "params": {
+                "district": matched_district,
+                "year": int(re.search(r"(?<!\d)(1\d{2})(?:年|年度)", q).group(1))
+                        if re.search(r"(?<!\d)(1\d{2})(?:年|年度)", q) else 113,
+                "industry_code": "29" if any(k in q for k in ["精密機械", "機械設備", "機械製造"]) else
+                                 "25" if "金屬製品" in q else "26" if "電子零組件" in q else None
+            }
         }
 
     # 5. Check for Mismatch & Warning queries

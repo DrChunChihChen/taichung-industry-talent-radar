@@ -21,6 +21,7 @@ from config import (
 from database.db_manager import db
 from agent.agent_service import agent_service
 from engine.gcis_live_verifier import verify_company_live
+from engine.factory_density import get_regional_peer_density
 from tests.test_etl_quality import run_data_quality_audit
 from benchmark.run_benchmark import run_benchmark_validation
 
@@ -137,6 +138,13 @@ def get_industry_dynamics(
         "records": enriched,
         "momentum_summary": mom_table
     }
+
+@app.get("/api/regional-peer-density")
+def regional_peer_density(district: str = "大雅區", year: int = 113,
+                          industry_code: Optional[str] = None) -> Dict[str, Any]:
+    """Reviewed MOEA factory counts; unavailable queries never use demo values."""
+    return get_regional_peer_density(district, year, industry_code)
+
 
 @app.get("/api/spatial-demand")
 def get_spatial_demand(district: Optional[str] = Query(None), year: int = 113) -> Dict[str, Any]:
